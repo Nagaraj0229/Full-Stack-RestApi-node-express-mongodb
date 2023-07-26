@@ -5,7 +5,7 @@ ________________________________________________________________________________
 
 INTRODUCTION PART
 -----------------
-
+ we need to make and deploy our web application first make sure cloud part storing our codes that is nothing but it is a github so we need to sign up using email id into github account then sign in then, do the configuration steps in gitbash interface then crate new repo for our local project then, do the clone the link of our url into the local machine then, start our work . 
 1.make new directory crud_app
 2.let do (npm init)
 3. initialize our package.json file our wish term words
