@@ -209,7 +209,110 @@ then do the server side opearation with routes part (using only exoresss framewo
 
 
 
+Creating a CRUD Application with Node.js, Express, MongoDB, HTML, CSS, and EJS
 
+
+Introduction
+
+In this guide, we will develop and deploy a web application using Node.js, Express framework, MongoDB, HTML, CSS, and EJS templating engine. We'll start by setting up our project on GitHub, configuring the environment, and installing necessary npm packages.
+
+Prerequisites
+
+GitHub account for code hosting
+Gitbash for configuration
+Node.js and npm installed
+Basic understanding of Node.js, Express, MongoDB, HTML, CSS, and EJS
+
+Project Setup
+
+Create a new directory named crud_app.
+Run npm init to initialize package.json with your preferred settings.
+Install required npm packages using:
+css
+Copy code
+npm install express morgan nodemon ejs body-parser dotenv mongoose mongodb axios
+Package Purposes
+Express: Web framework for Node.js to build web applications.
+Morgan: Logging middleware for Express.
+Nodemon: Tool to automatically restart Node.js apps on code changes.
+EJS: Templating engine for dynamic HTML.
+Body-parser: Middleware for parsing incoming request bodies.
+Dotenv: Loading environment variables from a file.
+Mongoose: MongoDB driver for Node.js.
+MongoDB: Document-oriented database.
+Axios: Library for making HTTP requests.
+Project Structure
+lua
+Copy code
+crud_app
+├── assets
+│   ├── img
+│   ├── css
+│   │   └── style.css
+│   └── js
+├── server
+│   ├── model
+│   │   └── model.js
+│   ├── controller
+│   ├── database
+│   │   └── connection.js
+│   ├── services
+│   │   └── render.js
+│   └── routes
+│       └── router.js
+├── views
+│   ├── include
+│   │   ├── _header.ejs
+│   │   ├── _footer.ejs
+│   │   ├── _form.ejs
+│   │   └── _show.ejs
+│   ├── index.ejs
+│   └── index.html
+├── server.js
+├── package.json
+├── package-lock.json
+├── .gitignore
+├── .prettierrc
+├── .eslint
+└── config.env
+Building the Application
+Set up an HTTP server and define the port using environment variables.
+Use __dirname to access file paths.
+Explain the usage of morgan for request logging.
+Views and Templating
+Set up EJS views with _header and _footer includes.
+Create an index.ejs file to structure the page.
+Style the HTML elements in index.html.
+Forms and Tables
+Design the main page with user details display.
+Style the user interface form.
+EJS Workflow
+Create EJS files for showing, updating, and adding users.
+Routing and CRUD Operations
+Set up routes with express.Router().
+Implement GET, POST, and PUT methods for users.
+MongoDB Integration
+Connect to MongoDB using Mongoose.
+Define models with schema validation.
+API Workflow
+Create controllers for CRUD operations.
+Implement create, find, update, and delete methods.
+Testing APIs
+Use Postman to test GET, POST, PUT, and DELETE requests.
+Test getting a single user with an ID parameter.
+Integrating APIs
+Access localhost URLs directly to check data retrieval.
+Display retrieved data on the web application.
+Adding New Users
+Add new users through the web application.
+Updating Users
+Update user information using the web application.
+Deleting Users
+Delete users using the web application.
+Running the Web Application
+Use npm run start to run the application with Nodemon.
+Test adding, updating, and deleting users through the web interface.
+Congratulations, you've successfully created a CRUD web application using Node.js, Express, MongoDB, HTML, CSS, and EJS templating!
 
 
 
